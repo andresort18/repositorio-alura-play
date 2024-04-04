@@ -1,0 +1,32 @@
+.cabecera__container{ /* siempre le hacemos flexbox a la etiqueta padre */
+    display: flex; /* hacemos el contenido flexbox */
+    justify-content: space-between; /* les damos espaciado a los items entre ellos */
+    align-items: center; /* aliniamos los items al centro */
+    position: fixed; /* dejamos fijos los items para que no desaparezcan */
+    top: 0; /* posicion donde queremos dejar fijos los items */
+
+}
+.cabecera__buscar__item{
+    display: none; /* desaparecemos el item */
+
+}
+
+.rodapie__container{
+    display: flex;
+    /*flex-direction: column; aplicamos elementos en una sola columna 
+     flex-wrap: wrap;  quibran los elementos para que se ajusten al flex en modo de columnas*/ 
+     flex-flow: column wrap; /* Las dos funciones de arriba pero resumidas */
+}
+
+@media (min-width:834px){ /* media query ayuda a implementar elementos dentro de el cuando el valor en los parentesis se cumpla*/
+    
+    .cabecera__buscar__item{
+        display: block;
+    
+    }
+
+    .rodapie__container{
+        justify-content: space-between;
+    }
+}
+

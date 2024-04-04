@@ -11,6 +11,14 @@
 
 }
 
+.superior__seccion__container{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;  /* denegamos el espaciado del texto que se divide y lo dejamos en una sola linea */  
+    overflow: scroll; /* añadimos una barra para desplazar esa area */
+    gap: 15px; /* agregamos un espacio entre los elementos */
+}
+
 .rodapie__container{
     display: flex;
     /*flex-direction: column; aplicamos elementos en una sola columna 
@@ -28,5 +36,5 @@
     .rodapie__container{
         justify-content: space-between;
     }
-}
+}   
 

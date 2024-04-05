@@ -21,15 +21,21 @@
 
 .menu__lista{
     display: flex;
-    justify-content: space-around; /* asignar espacio entre cada elemento entre ellos */
+    justify-content: space-around;/* asignar espacio entre cada elemento entre ellos */
     height: 100%;
+}
+
+.menu__lista li {
+    align-self: center;
 
 }
-.menu__lista :nth-child(), /* seleccionamos los elementos que queremos Ocultar items que estan en con el mismo nombre de clase en el index */ 
-.menu__lista :nth-child(),  /* adentro de los parentesis ponemos el numero de clase que queremos ocultar */
-.menu__lista :nth-child() {
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4){
     display: none;
 }
+
 
 
 

@@ -1,40 +1,59 @@
-.cabecera__container{ /* siempre le hacemos flexbox a la etiqueta padre */
-    display: flex; /* hacemos el contenido flexbox */
-    justify-content: space-between; /* les damos espaciado a los items entre ellos */
-    align-items: center; /* aliniamos los items al centro */
-    position: fixed; /* dejamos fijos los items para que no desaparezcan */
-    top: 0; /* posicion donde queremos dejar fijos los items */
-
+/* Cabecera */
+.cabecera__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
 }
+
 .cabecera__buscar__item{
-    display: none; /* desaparecemos el item */
-
+    display: none;
 }
 
+
+
+/* Seccion superior */
 .superior__seccion__container{
     display: flex;
     align-items: center;
-    white-space: nowrap;  /* denegamos el espaciado del texto que se divide y lo dejamos en una sola linea */  
-    overflow: scroll; /* añadimos una barra para desplazar esa area */
-    gap: 15px; /* agregamos un espacio entre los elementos */
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+
 }
 
+
+
+
+/* Rodapie */
 .rodapie__container{
     display: flex;
-    /*flex-direction: column; aplicamos elementos en una sola columna 
-     flex-wrap: wrap;  quibran los elementos para que se ajusten al flex en modo de columnas*/ 
-     flex-flow: column wrap; /* Las dos funciones de arriba pero resumidas */
+    /* flex-direction: column;
+   flex-wrap: wrap; */
+   flex-flow: column wrap;
+    
+   
 }
 
-@media (min-width:834px){ /* media query ayuda a implementar elementos dentro de el cuando el valor en los parentesis se cumpla*/
-    
+
+
+@media (min-width:834px) {
+
+    /* Cabecera */
     .cabecera__buscar__item{
-        display: block;
-    
+        display: block
     }
 
+    /* Rodapie */
     .rodapie__container{
         justify-content: space-between;
     }
-}   
+   
+
+}
+
+
+
+
 

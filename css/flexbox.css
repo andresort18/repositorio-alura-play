@@ -60,6 +60,7 @@
      flex-flow: column wrap; /* Las dos funciones de arriba pero resumidas */
 }
 
+/* FLEXBOX para mobiles */
 @media (min-width:834px){ /* media query ayuda a implementar elementos dentro de el cuando el valor en los parentesis se cumpla*/
     
     .cabecera__buscar__item{
@@ -71,6 +72,7 @@
         justify-content: space-between;
     }
 
+    /* FLEXBOX para Tablets */
     .menu__container{
         left: 0;
         height: auto;
@@ -86,3 +88,47 @@
     }
 }   
 
+/* Flexbox para ordenadores */
+@media(min-width:1440px){
+    .menu__container{
+        width: 239px;
+        overflow: scroll;
+
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+    display: flex;
+    }
+
+    .menu__lista{
+        height: auto;
+        padding: 20px 17px 20px 15px;
+        gap: 15px;
+    }
+
+    .menu__lista:nth-child(3){
+        flex-direction: column-reverse ; /* Seleccionamos la seccion que queremos modifica, colum reverse; nos ayuda a voltear la columna */
+    }
+    
+    .menu__itens{
+        flex-direction: row; /* ponemos el incono junto al texto */
+        gap: 15px ; /* nos ayuda a separar los items uno del otro */
+        align-items: center; /* Nos ayuda a aliniar el icono y el texto */
+    }
+
+    /* Nos ayuda a ordenar por hijos el orden de los elementos segun su poscion esto no ordena los lectores de pantalla */
+    .videojuegos{
+        order: 3;
+    }
+
+    .peliculas{
+        order: 2;
+    }
+
+    .premium{
+        order: 1;
+    }
+
+}

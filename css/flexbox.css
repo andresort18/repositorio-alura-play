@@ -91,12 +91,12 @@
 /* Flexbox para ordenadores */
 @media(min-width:1440px){
     .menu__container{
-        width: 239px;
-        overflow: scroll;
+        width: 239px; /* asignamos el tamaño que tendra la barra lateral en la pantalla */
+        overflow: scroll; /* agregamos un scroll a la barra lateral */
 
     }
 
-    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(2),  /* En vez de seleccionar las secciones para ocultarlas esta vez fue para mostrarlas */
     .menu__lista:nth-child(3),
     .menu__lista:nth-child(4){
     display: flex;
@@ -104,7 +104,7 @@
 
     .menu__lista{
         height: auto;
-        padding: 20px 17px 20px 15px;
+        padding: 20px 17px 20px 15px; /* Espaciado del cuadro azul al seleccionar algun elemento de la barra lateral */
         gap: 15px;
     }
 
